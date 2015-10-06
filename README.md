@@ -1,5 +1,7 @@
 这是由24OI小组修改并维护的Lemon版本，可能存在一定的不稳定性（我们只是在消除一部分不稳定性）。
 
+当前的版本![Build](https://travis-ci.org/FreestyleOJ/Lemonade.svg?branch=editing)
+
 同时由Lemon激励开始的Lemonade项目正在设计中～欢迎加入～
 
 下面是原Repo的README，原Repo可以到Project-Lemon那个分支里找到所有的文件，在此鸣谢@zhipeng-jia和@Sojiv。OIer会记住你们的伟大！
