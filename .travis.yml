@@ -12,7 +12,9 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install -y qt4-dev-tools
 install:
-  - qmake lemon.pro
+  - sudo qmake lemon.pro
+script:
+  - sudo maek
 
 compiler:
   - gcc

@@ -23,7 +23,7 @@
 *.lib
 
 # Executables
-*.exe
+# *.exe note that 'realjudge_win32.exe' is needed
 *.out
 *.app
 
