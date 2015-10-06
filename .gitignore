@@ -26,3 +26,10 @@
 *.exe
 *.out
 *.app
+
+# Strange Backups
+
+*.md~
+*.cpp~
+*.html~
+*.js~
