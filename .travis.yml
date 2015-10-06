@@ -14,7 +14,7 @@ before_install:
 install:
   - sudo qmake lemon.pro
 script:
-  - sudo maek
+  - sudo make
 
 compiler:
   - gcc
