@@ -1,0 +1,19 @@
+language: cpp
+# whitelist
+branches:
+  only:
+    - editing
+# `.travis.yml` needs to be on all active branches,
+# make sure to change every file when changing ideas
+# Besides, `http://docs.travis-ci.com/user/customizing-the-build/#Using-regular-expressions` this sounds good.
+# You may also use `[ci skip]` in the commit message to escape from building
+# Find more at docs.travis-ci.com
+before_install:
+  sudo apt-get update
+  sudo apt-get install -y qt4-dev-tools
+install:
+  qmake lemon.pro
+
+compiler:
+  - gcc
+  - clang
