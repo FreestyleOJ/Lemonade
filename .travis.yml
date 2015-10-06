@@ -9,10 +9,10 @@ branches:
 # You may also use `[ci skip]` in the commit message to escape from building
 # Find more at docs.travis-ci.com
 before_install:
-  sudo apt-get update
+  - sudo apt-get update
+  - sudo apt-get install -y qt4-dev-tools
 install:
-  sudo apt-get install -y qt4-dev-tools
-  qmake lemon.pro
+  - qmake lemon.pro
 
 compiler:
   - gcc
