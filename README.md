@@ -1,6 +1,8 @@
 这是由24OI小组修改并维护的Lemon版本，可能存在一定的不稳定性（我们只是在消除一部分不稳定性）。
 
-当前的版本![Build](https://travis-ci.org/FreestyleOJ/Lemonade.svg?branch=editing)
+[![Build](https://travis-ci.org/FreestyleOJ/Lemonade.svg?branch=editing)](https://travis-ci.org/FreestyleOJ/Lemonade/builds)
+
+[![Stories in Ready](https://badge.waffle.io/FreestyleOJ/Lemonade.svg?label=ready&title=Ready)](http://waffle.io/FreestyleOJ/Lemonade)
 
 同时由Lemon激励开始的Lemonade项目正在设计中～欢迎加入～
 
