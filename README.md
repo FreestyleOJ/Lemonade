@@ -1,5 +1,7 @@
 这是由24OI小组修改并维护的Lemon版本，可能存在一定的不稳定性（我们只是在消除一部分不稳定性）。
 
+[![24OI](https://img.shields.io/badge/24OI-AC-green.svg)](http://www.24oi.cf)
+
 [![Build](https://travis-ci.org/FreestyleOJ/Lemonade.svg?branch=editing)](https://travis-ci.org/FreestyleOJ/Lemonade/builds)
 
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/6617/badge.svg)](https://scan.coverity.com/projects/freestyleoj-lemonade)
