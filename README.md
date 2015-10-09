@@ -2,6 +2,8 @@
 
 [![Build](https://travis-ci.org/FreestyleOJ/Lemonade.svg?branch=editing)](https://travis-ci.org/FreestyleOJ/Lemonade/builds)
 
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/6617/badge.svg)](https://scan.coverity.com/projects/freestyleoj-lemonade)
+
 [![Stories in Ready](https://badge.waffle.io/FreestyleOJ/Lemonade.svg?label=ready&title=Ready)](http://waffle.io/FreestyleOJ/Lemonade)
 
 同时由Lemon激励开始的Lemonade项目正在设计中～欢迎加入～
