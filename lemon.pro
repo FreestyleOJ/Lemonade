@@ -149,3 +149,5 @@ win32:LIBS += -lpsapi
 win32:CONFIG += qaxcontainer
 
 RESOURCES += resource.qrc
+
+QMAKE_CXXFLAGS += -coverage
