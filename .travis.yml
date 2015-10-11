@@ -22,3 +22,7 @@ compiler:
   - clang
 after_success:
   - codecov
+
+notification:
+  email: "sirius.caffrey@gmail.com"
+  
