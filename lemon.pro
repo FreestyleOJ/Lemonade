@@ -150,4 +150,8 @@ win32:CONFIG += qaxcontainer
 
 RESOURCES += resource.qrc
 
-QMAKE_CXXFLAGS += -coverage
+QMAKE_CXXFLAGS += -coverage \
+    -fprofile-arcs \
+    -ftest-coverage
+
+QMAKE_LFLAGS += -fprofile-arcs
