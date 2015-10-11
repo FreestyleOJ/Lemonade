@@ -25,4 +25,4 @@ after_success:
 
 notification:
   email: "sirius.caffrey@gmail.com"
-  
+
