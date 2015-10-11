@@ -11,6 +11,7 @@ branches:
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y qt4-dev-tools
+  - pip install --user codecov
 install:
   - sudo qmake lemon.pro
 script:
@@ -19,19 +20,8 @@ script:
 compiler:
   - gcc
   - clang
+after_success:
+  - codecov
 
-env:
-  global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "oz7UFUm6OGpSYeDkr+Gp87Tz9us7zIrHu+bA40BtWDPIhO6Xsomx5+9/uHXyfuAwK6Eq0BZrp/L6cGDOI2bWo69Dzwp7ZKg2X6dKino6u2oTAX19fzma7WtiPLLZ0z9DtmvyENAZBbVf3gkE9GGMrSDmQXU+RpLzQz2QFHdqw8girDxgskZUDDYAKY8eus4k7NxFMBL+nIyteIU72DZlznW6P9qVRQ3YHxRja12sVazfbU+GBr8FtqrTyNnkL9L8hhnzFJGZKBvmihmWmaSVHfK/78FFkrccyNlKdTjdVxWH91P/1+nkK/PoGOHH0ufqQ7oPOpbEdaDFVYHOFWscpbZYQcykjJ2U82euRQEKUwAEQETOGjMEGClJCthgScCy8SZKM9ivDPmWDQ5/d9p80SK6/JSAS1M0Jnq0QKPLL2+BZL1ILJ1DcsWjTIFoDfYe3XDdwiOUancamXWZpSl7gfQlEWqPn94hdNExdBqx/mEejHo7db9fAUgFcriyD5d1ewWaA+YERneLlBQppWwCRIZd2sUU4rIPpp4mUUOyeWQOsYkaaNTtCEJmVfwtTrr39nhGqLJq97sUZa9p4xDvkg5woyxpdtiLgs790/JGym8ogIbSaz0Q7ZvGCcpx3SQgHxpG2sw812brEEmc4hpnfhfaVpAFEOFyiUY+azZTY1g="
-
-addons:
-  coverity_scan:
-    project:
-      name: "FreestyleOJ/Lemonade"
-      description: "Build submitted via Travis CI"
-    notification_email: sirius.caffrey@gmail.com
-    build_command_prepend: "sudo apt-get update;sudo apt-get install -y qt4-dev-tools;sudo qmake lemon.pro;"
-    build_command:   "make"
-    branch_pattern: coverity_scan
+notification:
+  email: "sirius.caffrey@gmail.com"
