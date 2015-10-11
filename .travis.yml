@@ -11,6 +11,7 @@ branches:
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y qt4-dev-tools
+  - pip install --user codecov
 install:
   - sudo qmake lemon.pro
 script:
@@ -19,3 +20,5 @@ script:
 compiler:
   - gcc
   - clang
+after_success:
+  - codecov
